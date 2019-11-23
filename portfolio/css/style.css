@@ -1,0 +1,366 @@
+/* CSS Document */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #333333;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------------------
+　全体
+---------------------------------*/
+
+#wrapper {
+  background-image: url(../image/mokume.jpg);
+  background-position: left top;
+  background-size: contain;
+}
+
+.inner {
+  max-width: 1320px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#contents {
+  padding: 40px 0;
+}
+
+
+/*--------------------------------
+　ヘッダー
+---------------------------------*/
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 550px;
+}
+
+#header .logo {
+  display: block;
+}
+
+#header .logo-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 84px;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+#header .logo-desc {
+  font-family: "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "游明朝体", "Yu Mincho", YuMincho, "MS P明朝", "MS PMincho", serif;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*--------------------------------
+　グローバルナビ
+---------------------------------*/
+
+#gnav {
+  padding: 10px;
+  font-family: 'Open sans', sans-serif;
+  z-index: 100;
+}
+
+#gnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#gnav li {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0px 30px;
+}
+
+#gnav li:last-child {
+  margin-right: 0;
+}
+
+#gnav li a {
+  color: #000000;
+  letter-spacing: -0.01em;
+}
+
+#contents {
+  padding: 40px 0;
+}
+
+#gnav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, 0, 0);
+  background-image: url(../image/mokume.jpg);
+}
+
+
+/*--------------------------------
+　Section
+---------------------------------*/
+
+.section .inner {
+  padding: 80px 20px;
+}
+
+.section .section-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section .section-title {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.section .section-desc {
+  text-align: center;
+}
+
+.two-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.two-column-desc-about {
+  margin-left: 35%;
+  width: 100%;
+}
+
+.two-column-desc-about {
+  margin-left: 30%;
+  width: 80%;
+}
+
+/*--------------------------------
+　WORKS
+---------------------------------*/
+
+#works .card {
+  width: 32%;
+}
+
+#works .card {
+  margin-bottom: 50px;
+}
+
+#works .card-image {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#works .card-caption-title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#works .card-caption-info {
+  font-size: 12px;
+}
+
+#works .card-caption-url {
+  font-size: 10px;
+}
+
+#works .card-wrapper {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/*--------------------------------
+　ABOUT
+---------------------------------*/
+
+#about .two-column-desc {
+  width: 70%;
+}
+
+/*--------------------------------
+ SKILL
+---------------------------------*/
+
+#skill .card-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#skill .card {
+  flex-basis: 46%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#skill .card:first-child {
+  flex-basis: 100%;
+}
+#skill .skill-desc {
+  flex-basis: calc(100% - 75px - 30px);
+}
+
+#skill .skill-desc-title {
+  margin-bottom: 3px;
+}
+
+#skill .rate {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#skill .rate:before, #skill .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+
+#skill .rate:before {
+  color: #ddd;
+}
+
+#skill .rate:after {
+  color: #e8629f;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#skill .rate1:after {
+  width: 20px;
+}
+
+#skill .rate2:after {
+  width: 40px;
+}
+
+#skill .rate3:after {
+  width: 60px;
+}
+
+#skill .rate4:after {
+  width: 80px;
+}
+
+#skill .rate5:after {
+  width: 100px;
+}
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+
+#footer {
+  background-color: #333;
+}
+
+#footer .inner {
+  padding: 30px;
+}
+
+#footer .footer-link ul {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+#footer .footer-link li {
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+#footer .footer-link li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+#footer .copyright {
+  font-size: 10px;
+  color: #8c8c8c;
+  text-align: center;
+}
